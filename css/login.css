@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+.body {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background: url("https://mykhailopyko.github.io/Mirage/images/bg-footer.png") no-repeat left bottom,
+        url("https://mykhailopyko.github.io/Mirage/images/bg-footer1.png") no-repeat left bottom,
+        url("https://mykhailopyko.github.io/Mirage/images/Message.png") no-repeat 50px 100px;
+}
+
+.main-logo {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 0.02em;
+    color: #f087b1;
+}
+
+.main-logo span {
+    color: #56597a;
+}
+
+.grad {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -40px;
+    bottom: -40px;
+    width: auto;
+    height: auto;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.3)));
+    /* Chrome,Safari4+ */
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.logo {
+    position: absolute;
+    top: calc(50%);
+    left: calc(50% - 300px);
+    z-index: 2;
+}
+
+.login {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    height: 150px;
+    width: 350px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.login input[type=text] {
+    width: 300px;
+    height: 50px;
+    background: #56597a50;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    padding-left: 15px;
+}
+
+.login input[type=password] {
+    width: 300px;
+    height: 50px;
+    background: #56597a50;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.login button {
+    width: 300px;
+    height: 60px;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 5px;
+    background: #F78BB6;
+    border-radius: 4px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.301);
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+.login button:hover {
+    background-color: #f45997;
+}
+
+.login button:active {
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus {
+    animation: pulse 2s infinite;
+}
+
+.login input[type=password]:focus {
+    animation: pulse 2s infinite;
+}
+
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 #F78CB640;
+        box-shadow: 0 0 0 0 #F78CB640;
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 8px #F78CB680;
+        box-shadow: 0 0 0 8px #F78CB680;
+    }
+
+    100% {
+        -moz-box-shadow: 0 0 0 0 #F78CB680;
+        box-shadow: 0 0 0 0 #F78CB680;
+    }
+}
