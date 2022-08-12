@@ -233,3 +233,27 @@ h6 {
         box-shadow: 0 0 0 0 #F78CB680;
     }
 }
+
+@media (max-width: 768px) {
+
+    .logo {
+        top: calc(32%);
+        left: calc(50% - 105px);
+    }
+
+    .login {
+        position: absolute;
+        top: calc(50% - 50px);
+        left: calc(50% - 150px);
+        height: 150px;
+        width: 350px;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .body {
+        background: url("https://mykhailopyko.github.io/Mirage/images/bg-footer.png") no-repeat left bottom,
+            url("https://mykhailopyko.github.io/Mirage/images/bg-footer1.png") no-repeat left bottom,
+            url("https://mykhailopyko.github.io/Mirage/images/Message.png") no-repeat 30px 10px;
+    }
+}
